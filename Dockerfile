@@ -1,2 +1,2 @@
-FROM docker.elastic.co/kibana/kibana:6.5.1
-RUN /opt/kibana/bin/kibana-plugin install https://github.com/sirensolutions/sentinl/releases/download/tag-6.5.0-0/sentinl-v6.5.1.zip
+FROM docker.elastic.co/kibana/kibana:6.5.2
+RUN NODE_OPTIONS="--max-old-space-size=4096" kibana-plugin install https://github.com/bitsensor/elastalert-kibana-plugin/releases/download/1.0.1/elastalert-kibana-plugin-1.0.1-6.5.2.zip
